@@ -1,11 +1,20 @@
-# 🎴 LAZY BUILDER — Next-Gen Standalone MTG Commander Platform
+# 🎴 LazyMagic. Deck Generator — MTG EDH Standalone Platform
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-orange.svg)](https://opensource.org/licenses/MIT)
 [![Platform](https://img.shields.io/badge/Platform-macOS%20%7C%20Android%20%7C%20Web-blue.svg)]()
 [![Build Status](https://img.shields.io/badge/Build-Passing-emerald.svg)]()
 [![Database](https://img.shields.io/badge/Offline%20DB-31%2C705%20Cards-purple.svg)]()
 
-> **Lazy Builder** è una piattaforma standalone cross-platform (macOS Desktop & Android Native) dedicata alla generazione assistita, ottimizzazione deterministica e analisi sinergica visuale di mazzi per il formato **Commander / EDH** di *Magic: The Gathering*.
+> **LazyMagic. Deck Generator** è una piattaforma standalone cross-platform (macOS Desktop & Android Native) dedicata alla creazione assistita, ottimizzazione deterministica e analisi sinergica visuale di mazzi per il formato **Commander / EDH** di *Magic: The Gathering*.
+
+---
+
+## 📦 SCARICA LE APPLICAZIONI (GitHub Releases)
+
+Puoi scaricare direttamente le ultime build eseguibili pronte all'uso dalla sezione [**GitHub Releases**](https://github.com/RobZombAI/lazy-builder-mtg/releases):
+
+- 🖥️ **[LazyMagic per macOS (.app.zip)](https://github.com/RobZombAI/lazy-builder-mtg/releases/download/v1.0.0/LazyMagic-macOS-arm64.zip)** — Applicazione desktop nativa standalone per Mac (Apple Silicon & Intel).
+- 📱 **[LazyMagic per Android (.apk)](https://github.com/RobZombAI/lazy-builder-mtg/releases/download/v1.0.0/LazyMagic-Android.apk)** — Pacchetto nativo Android per smartphone e tablet.
 
 ---
 
@@ -42,7 +51,7 @@ L'analisi ablativa valuta l'impatto architetturale, algoritmico e prestazionale 
 | **1. Validatore Deterministico** | Rimozione delle regole singleton, identità colore e banned list. | Generazione di mazzi con carte di colori errati o doppioni illegali. | **CRITICO (100%)**: Indispensabile per garantire mazzi EDH giocabili nei tornei. |
 | **2. Database Locale Offline (31k JSON)** | Rimozione del DB locale per dipendere solo da chiamate API remote Scryfall. | L'app fallisce in assenza di rete wi-fi o su dispositivi mobili senza segnale. | **ESSENZIALE (95%)**: Garantisce l'autonomia locale su macOS ed Android. |
 | **3. Proxy Immagini Scryfall Live** | Rimozione del fallback dinamico `getCardImageUrl` e risoluzione named API. | Carte con URL mancanti nell'API Scryfall o bifaccia (MDFC) mostrano immagini vuote. | **FONDAMENTALE (90%)**: Assicura la presenza del 100% delle illustrazioni delle carte. |
-| **4. Motore di Tuning Power Level** | Generazione causale delle carte senza vincoli di CMC e tag tattici. | Mazzi sbilanciati con troppe carte ad alto costo o senza rampe di mana. | **IMPORTANTE (85%)**: Necessario per calibrare la competitività desiderata dall'utente. |
+| **4. Motore di Tuning Power Level** | Generazione casuale delle carte senza vincoli di CMC e tag tattici. | Mazzi sbilanciati con troppe carte ad alto costo o senza rampe di mana. | **IMPORTANTE (85%)**: Necessario per calibrare la competitività desiderata dall'utente. |
 | **5. Visualizzatore Grafico ad Albero (Trend #4)** | Sostituzione con tabelle di testo standard priva di ramificazioni gerarchiche. | Difficoltà nel comprendere la relazione strutturale tra il Comandante e i pilastri del mazzo. | **ALTO VALORE UX (80%)**: Offre la migliore comprensione visiva della strategia. |
 
 ---
@@ -51,7 +60,7 @@ L'analisi ablativa valuta l'impatto architetturale, algoritmico e prestazionale 
 
 ```
 +-------------------------------------------------------------------+
-|                        LAZY BUILDER SPA                           |
+|                   LAZYMAGIC. DECK GENERATOR                       |
 |       (React 18 + TypeScript + Vite + Tailwind CSS + Three.js)    |
 +-------------------------------------------------------------------+
                                   |
@@ -80,8 +89,8 @@ L'analisi ablativa valuta l'impatto architetturale, algoritmico e prestazionale 
 
 ### 1. Clonare il Repository & Installare le Dipendenze
 ```bash
-git clone https://github.com/RobZombAI/MAGIC-CON-CHEF.git
-cd MAGIC-CON-CHEF
+git clone https://github.com/RobZombAI/lazy-builder-mtg.git
+cd lazy-builder-mtg
 npm install
 ```
 
@@ -98,7 +107,7 @@ npm run desktop
 ### 4. Compilare il Pacchetto macOS (.app)
 ```bash
 npm run pack:mac
-# L'applicazione verrà salvata in: dist-desktop/Lazy Builder-darwin-arm64/Lazy Builder.app
+# L'applicazione verrà salvata in: dist-desktop/LazyMagic-darwin-arm64/LazyMagic.app
 ```
 
 ### 5. Compilare l'APK Android Native

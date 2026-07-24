@@ -20,7 +20,7 @@ export const Header: React.FC = () => {
           </div>
           <div>
             <h1 className="text-xl sm:text-2xl font-extrabold tracking-tight font-sans text-white flex items-center gap-2">
-              LAZY BUILDER
+              LazyMagic. Deck Generator
               <span className="text-xs px-2 py-0.5 rounded-full bg-orange-500/20 text-orange-400 border border-orange-500/30 font-semibold tracking-wide uppercase">
                 EDH Dual-Engine
               </span>

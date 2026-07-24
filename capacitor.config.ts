@@ -1,8 +1,8 @@
 import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'com.lazybuilder.mtg',
-  appName: 'Lazy Builder',
+  appId: 'com.lazymagic.deckgenerator',
+  appName: 'LazyMagic. Deck Generator',
   webDir: 'dist',
   server: {
     androidScheme: 'https'
