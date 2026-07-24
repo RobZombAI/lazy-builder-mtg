@@ -5,6 +5,8 @@
 [![Build Status](https://img.shields.io/badge/Build-Passing-emerald.svg)]()
 [![Database](https://img.shields.io/badge/Offline%20DB-31%2C705%20Cards-purple.svg)]()
 
+![LazyMagic UI Preview](docs/lazymagic_preview.jpg)
+
 > **LazyMagic. Deck Generator** è una piattaforma standalone cross-platform (macOS Desktop & Android Native) dedicata alla creazione assistita, ottimizzazione deterministica e analisi sinergica visuale di mazzi per il formato **Commander / EDH** di *Magic: The Gathering*.
 
 ---
